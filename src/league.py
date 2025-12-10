@@ -53,7 +53,6 @@ class CurrentLeague:
         highest_score = 0
 
         for matchup in all_matchups:
-            print(f"{matchup.home_team.team_name} score: {matchup.home_score}, {matchup.away_team.team_name} score: {matchup.away_score}")
             if matchup.home_score - matchup.away_score < 1 and matchup.home_score - matchup.away_score > 0:
                 print(f"Bad beat prize goes to: {matchup.away_team.team_name}")
             elif matchup.away_score - matchup.home_score < 1 and matchup.away_score - matchup.home_score > 0:
