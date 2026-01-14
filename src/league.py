@@ -10,7 +10,6 @@ from espn_api.football import League
 class CurrentLeague:
 
     def __init__(self, league_id: int, year: int, week: int):
-        # Not using getters and setters for simplicity as these will not change per object
         self.league_id = league_id
         self.year = year
         self.week = week
